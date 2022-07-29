@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: #ffff;
+    /* overflow: hidden; */
+
+
+}
+
+.background-animation {
+    /* background: linear-gradient(to right, #b91d73, #f953c6); */
+    /* background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); */
+    background: rgb(28, 30, 36);
+    /* background-color: #090947;
+    background-image: linear-gradient(315deg, #090947 0%, #5a585a 74%); */
+    /* background-color: #4834d4;
+    background-image: linear-gradient(315deg, #4834d4 0%, #0c0c0c 74%); */
+    padding-bottom: 40px;
+}
+
+.animation.content {
+    margin: 14%;
+    margin-top: 10%;
+    font-size: 55px;
+    margin-bottom: 53px;
+    text-align: center;
+    color: rgb(255, 99, 0);
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+marquee {
+    padding: 33px;
+}
+
+.animation-classes {
+    padding: 30px;
+    padding-top: 0px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.documation button {
+    border: 0;
+    font-size: 18px;
+    padding: 12px;
+    background-color: rgb(255, 99, 0);
+    color: #ffff;
+    border-radius: 10px;
+}
+
+.animation-classes marquee li {
+    /* background-color: rgb(255, 99, 0); */
+
+    border: solid 2px rgb(255, 99, 0);
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 10px;
+    margin: 10px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+li.fromcenter.active {
+    background: #fff;
+    color: rgb(255, 99, 0);
+    cursor: pointer;
+
+}
+
+.copy-icon {
+    position: relative;
+    height: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    align-self: center;
+    outline: none;
+    top: -4px;
+    cursor: pointer;
+    background: none;
+    background: rgb(255, 99, 0);
+    visibility: hidden;
+}
+
+.copy-icon::before {
+    content: "";
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    width: 120%;
+    height: 120%;
+    border: 1px solid rgb(255, 99, 0);
+    z-index: 1;
+}
+
+.fromcenter:hover .copy-icon {
+    visibility: visible;
+}
+
+.fromcenter .copy-icon:hover,
+.fromcenter .copy-icon:hover::before {
+    border-color: rgb(255, 99, 0);
+}
+
+.copy-icon:hover .tooltip {
+    visibility: visible;
+}
