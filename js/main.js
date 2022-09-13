@@ -56,7 +56,11 @@ document.querySelectorAll(".fromcenter").forEach((item) => {
  ********************************Toaster js **************************
  **** ****************************************************************/
 
-function showAlert() {
+function showAlert(value) {
+  var sheets = document
+  .getElementsByTagName('link');
+    sheets[1].href = value;
+
   var myAlert = document.getElementById("myAlert");
   myAlert.className = "show";
   setTimeout(function () {
